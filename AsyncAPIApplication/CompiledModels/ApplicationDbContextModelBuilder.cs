@@ -15,7 +15,7 @@ namespace AsyncAPIApplication.CompiledModels
     public partial class ApplicationDbContextModel
     {
         private ApplicationDbContextModel()
-            : base(skipDetectChanges: false, modelId: new Guid("ca0e2e44-fc9d-4d6c-a139-331cf3e5ee6a"), entityTypeCount: 1)
+            : base(skipDetectChanges: false, modelId: new Guid("5740b6e7-3b7a-45b8-a60e-95ed15d02b2a"), entityTypeCount: 1)
         {
         }
 
