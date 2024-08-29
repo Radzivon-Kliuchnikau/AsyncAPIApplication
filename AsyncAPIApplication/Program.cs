@@ -1,9 +1,7 @@
-using System.Text.Json.Serialization;
 using AsyncAPIApplication.Data;
 using AsyncAPIApplication.Dtos;
 using AsyncAPIApplication.Models;
 using AsyncAPIApplication.Utils;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateSlimBuilder(args);
@@ -68,9 +66,9 @@ app.MapGet("api/v1/supplies/status/{requestId}", async (ApplicationDbContext dbC
     return Results.Ok(listingStatus);
 });
 
-app.MapGet("api/v1/supplies/{requestId}", (string requestId) =>
+app.MapGet("api/v1/supplies/{resourceId}", (string resourceId) =>
 {
-    return Results.Ok($"There is a result we want to receive with request id equals to {requestId}");
+    return Results.Ok($"There is a result we want to receive with request id equals to {resourceId}");
 });
 
 app.Run();
